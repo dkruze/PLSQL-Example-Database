@@ -1,4 +1,3 @@
---Requirements 3, 16, and 17 are contained in the following CREATE TABLE statements.
 --The list of DROP TABLE commands immediately following this comment serves as a list of all tables included in the database
 --Note that CF_AVAILABLE is not included in the ERD, because it is created on the fly from an existing table, CF_PRODUCTS
 DROP TABLE cf_catalog CASCADE CONSTRAINTS;
@@ -19,13 +18,13 @@ CREATE TABLE cf_catalog (
 	pitch VARCHAR2(100),
 	CONSTRAINT cf_productName PRIMARY KEY(productName));
 INSERT INTO cf_catalog
-   VALUES('Blendtron 3X6', 'Blendcorp® Inc.', 499.99, '15-OCT-18', 'Never worry about a blender not being strong enough again! 3 Tiers of slashing power!');
+   VALUES('Blendtron 3X6', 'BlendcorpÂ® Inc.', 499.99, '15-OCT-18', 'Never worry about a blender not being strong enough again! 3 Tiers of slashing power!');
 INSERT INTO cf_catalog
-   VALUES('Steak au Poivre: Ready-to-Eat', 'Cultured-Man®', 14.49, '09-JUN-15', 'In a hurry, but don''t want to eat like it? Try Cultured-man®''s 15-minute Steak au Poivre!');
+   VALUES('Steak au Poivre: Ready-to-Eat', 'Cultured-ManÂ®', 14.49, '09-JUN-15', 'In a hurry, but don''t want to eat like it? Try Cultured-manÂ®''s 15-minute Steak au Poivre!');
 INSERT INTO cf_catalog
-   VALUES('Homestyle Sausage Roller', 'Tesco®', 59.99, '30-APR-21', 'Bring the 7/11 magic right to your home! Roll hot dogs, sausages, and more on your countertop!');
+   VALUES('Homestyle Sausage Roller', 'TescoÂ®', 59.99, '30-APR-21', 'Bring the 7/11 magic right to your home! Roll hot dogs, sausages, and more on your countertop!');
 INSERT INTO cf_catalog
-   VALUES('4-Piece Kitchen Knife Set', 'Guai-Lo®', 219.99, '21-SEP-23', '[Coming Soon!] A price that won''t bust the bank, but knives that''ll bust anything!');
+   VALUES('4-Piece Kitchen Knife Set', 'Guai-LoÂ®', 219.99, '21-SEP-23', '[Coming Soon!] A price that won''t bust the bank, but knives that''ll bust anything!');
 INSERT INTO cf_catalog
    VALUES('Entire North Sea Halibut', '[Unavailable]', 0.00, '1-JAN-00', '[This product is no longer available. We apologize for the inconvenience.]');
    
@@ -40,21 +39,21 @@ CREATE TABLE cf_products (
     CONSTRAINT cf_catalog_productName_p FOREIGN KEY (productName)
         REFERENCES cf_catalog (productName));
 INSERT INTO cf_products
-  VALUES(1, 'Blendtron 3X6', 'Blendcorp® Inc.', 499.99, 1, 'This 3-tiered blender NEW from industry-standard brand Blendcorp® allows quick and easy blending for ANY blending need! 
+  VALUES(1, 'Blendtron 3X6', 'BlendcorpÂ® Inc.', 499.99, 1, 'This 3-tiered blender NEW from industry-standard brand BlendcorpÂ® allows quick and easy blending for ANY blending need! 
   Rated up to 2000ft/lbs of force by the ATF and FAA, the paperwork is worth it when you figure out that YOU can blend ANYTHING from daiquiris to puree to gravel in seconds! 
   Even cleaning it is easy, owing to the segmenting, 3-tiered design allowing YOU to desconstruct and service the blender at will.');
 INSERT INTO cf_products
-  VALUES(2, 'Steak au Poivre: Ready-to-Eat', 'Cultured-Man®', 14.49, 0, 'We''ve all been there: you want to have world-class food, but you''ve got a working-class schedule. 
-  Thankfully, Cultured-Man''s® got the solution! The new Steak au Poivre Ready-to-Eat is NOW officially on the menu! 
+  VALUES(2, 'Steak au Poivre: Ready-to-Eat', 'Cultured-ManÂ®', 14.49, 0, 'We''ve all been there: you want to have world-class food, but you''ve got a working-class schedule. 
+  Thankfully, Cultured-Man''sÂ® got the solution! The new Steak au Poivre Ready-to-Eat is NOW officially on the menu! 
   The favored steak dinner-for-two among the French masters is now only a button press away, with this microwave-safe meal being ready in ONLY 15 minutes! 
   Don''t resign yourself to frozen pizza or burritos anymore; travel all the way to Paris from the comfort of your couch!');
 INSERT INTO cf_products
-  VALUES(3, 'Homestyle Sausage Roller', 'Tesco®', 59.99, 0, 'Have you ever wanted to bring that 7/11-feeling straight into YOUR kitchen? Want no longer: buy! 
-  Tesco® is finally rolling out a home version of the rollers they use for hot dogs and sausage rolls, and at a low price to boot! 
-  You can put practically anything on here and treat it JUST like a rotisserie...but BETTER, because it''s just like they''ve got at Tesco''s®! 
+  VALUES(3, 'Homestyle Sausage Roller', 'TescoÂ®', 59.99, 0, 'Have you ever wanted to bring that 7/11-feeling straight into YOUR kitchen? Want no longer: buy! 
+  TescoÂ® is finally rolling out a home version of the rollers they use for hot dogs and sausage rolls, and at a low price to boot! 
+  You can put practically anything on here and treat it JUST like a rotisserie...but BETTER, because it''s just like they''ve got at Tesco''sÂ®! 
   Supports up to 10 simultaneous sausages at once, heats up to 450F.');
 INSERT INTO cf_products
-  VALUES(4, '4-Piece Kitchen Knife Set', 'Guai-Lo®', 219.99, 1, 'Here''s a set of real, Chinese knives built for EVERYBODY...REALLY! 
+  VALUES(4, '4-Piece Kitchen Knife Set', 'Guai-LoÂ®', 219.99, 1, 'Here''s a set of real, Chinese knives built for EVERYBODY...REALLY! 
   Whether you''re a beginner or a resturanteur, these knives are versatile, lightweight, and effective enough to stay sharp for MONTHS! 
   Folded over 1000 times for maximum sharpness, these knives stay just as well maintained as you do, and reward ALL skill levels for their practice and consistency with mind-boggling cutting power!');
 INSERT INTO cf_products
