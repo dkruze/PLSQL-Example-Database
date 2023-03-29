@@ -1,4 +1,3 @@
---Requirements 14 and 15 are contained in the following anonymous block
 --Note that when running this script, "Evil Item 1" and "Evil Item 2" will not appear in the specified tables, because they are immediately deleted
 --Also note that when run, shopper 6 will be Rueben Lidster and shopper 5 will be Richard Tower
 DECLARE
