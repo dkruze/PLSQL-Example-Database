@@ -1,6 +1,5 @@
---Requirements 4 and 13 are contained in the following DELETE, CREATE VIEW, and UPDATE statements
 --Note that every time this script is run, no new data will be added to CF_ORDERS because the existing data is deleted before being replaced
---Only the view PENDING_ORDERS is affected for requirement 13
+--Only the view PENDING_ORDERS is affected
 DROP VIEW available_products;
 DROP VIEW mishima_family;
 DROP VIEW product_options;
