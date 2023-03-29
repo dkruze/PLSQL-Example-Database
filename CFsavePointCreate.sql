@@ -1,4 +1,3 @@
---Requirement 12 is contained in the following anonymous block, preceded by a SAVEPOINT
 --Note that upon running this script, no data will show up in CF_ORDERS, because it is rolled back
 --Proof of this script's execution will be in the script output
 SAVEPOINT kazuya_order_save;
