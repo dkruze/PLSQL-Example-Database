@@ -1,4 +1,3 @@
---Requirement 19 is contained in the following CREATE SEQUENCE statements
 --Note that a sequence exists for each table that has an ID for every row
 DROP SEQUENCE new_orderID;
 DROP SEQUENCE new_shopperID;
