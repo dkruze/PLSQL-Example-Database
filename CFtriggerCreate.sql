@@ -1,4 +1,3 @@
---these fulfill requirements 1 through 5
 CREATE OR REPLACE TRIGGER cf_insertproduct_trg
    AFTER INSERT ON cf_products
    FOR EACH ROW
