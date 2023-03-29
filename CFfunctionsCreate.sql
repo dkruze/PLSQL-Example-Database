@@ -1,4 +1,3 @@
---this fulfills requirement 6
 CREATE OR REPLACE FUNCTION cf_largepurchase
     (x IN cf_cartitem.itemid%TYPE)
     RETURN NUMBER
